@@ -9,4 +9,5 @@ Installation Instructions:
 3. Change directory to spl (cd spl)
 4. run "make"
 5. run "sudo make install"
-6. Then come back to the original folder and run the game "./breakout"
+6. run "export CLASSPATH=/usr/local/lib/spl.jar" or add it to your .bashrc/.zshrc file
+7. Then come back to the original folder and run the game "./breakout"
