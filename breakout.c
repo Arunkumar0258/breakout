@@ -1,10 +1,3 @@
-//
-// breakout.c
-//
-// Computer Science 50
-// Problem Set 3
-//
-
 // standard libraries
 #define _XOPEN_SOURCE
 #include <stdio.h>
@@ -73,7 +66,6 @@ int main(void)
     // keep playing until game over
     while (lives > 0 && bricks > 0)
     {
-        // TODO
         waitForClick();
                 
         double velocity_y = 3.0;
@@ -186,7 +178,6 @@ int main(void)
  */
 void initBricks(GWindow window)
 {
-    // TODO
     int y=20;
     string colors[5] = {"RED","ORANGE","YELLOW","GREEN","BLUE"};
     for (int i = 0; i < ROWS; i++)
@@ -210,7 +201,6 @@ void initBricks(GWindow window)
  */
 GOval initBall(GWindow window)
 {
-    // TODO
     GOval ball = newGOval(200,300,20,20);
     setColor(ball, "#c90020");
     setFilled(ball, true);
@@ -223,7 +213,6 @@ GOval initBall(GWindow window)
  */
 GRect initPaddle(GWindow window)
 {
-    // TODO
     GRect paddle = newGRect(165,570,70,15);
     setColor(paddle, "#20b2aa");
     setFilled(paddle, true);
@@ -236,7 +225,6 @@ GRect initPaddle(GWindow window)
  */
 GLabel initScoreboard(GWindow window)
 {
-    // TODO
     GLabel score = newGLabel("0");
     setFont(score, "SansSerif-36");
     setColor(score, "PINK");
